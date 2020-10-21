@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Welcome to prediction section!</h1>
+    <p>Please fill out the form: </p>
+    <form method="POST" action="{{url_for('result')}}">
+    
+        <label for="gdp">GDP per Capita</label>
+        <input type="float" name="gdp">        
+        <br><label for="soc">Social Support</label>
+        <input type="float" name="soc">
+        <br><label for="health">Healthy Life Expectancy</label>
+        <input type="float" name="health">
+        <br><label for="freedom">Freedom to Make Life Choices</label>
+        <input type="float" name="freedom">
+        <br><label for="generosity">Generosity</label>
+        <input type="float" name="generosity">
+        <br><label for="trust">Perceptions of Corruption</label>
+        <input type="float" name="trust">
+        <br><input type="submit" value="Predict">
+
+    </form>
+</div>
+
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="jumbotron">
+    <h1>Prediction Rank: Between {{ pred[0]-2 }} to {{ pred[0] }}</h1>
+    <p></p>
+    <a href="{{url_for('predict')}}">Back to prediction page</a>
+</div>
+    
+
+{% endblock %}
